@@ -3,7 +3,7 @@
   "verified_validity_masks": 200,
   "verified_scl_geotiffs": 200,
   "temporally_aligned_locations": 25,
-  "original_files_verified_against_before_manifest": 405,
+  "original_files_verified_against_before_manifest": 0,
   "valid_pixels": 31999992,
   "invalid_pixels": 8,
   "flagged_observations": [
