@@ -1,4 +1,6 @@
-# Abqaiq–Salasil Sentinel-2 Time Series Dataset (2019–2026)
+# RawDataset
+
+Abqaiq–Salasil Sentinel-2 Time Series Dataset (2019–2026)
 
 **Course:** ARTI 403 – Image Processing
 **Content:** 200 co-registered Sentinel-2 Level-2A image chips: 25 fixed locations × 8 years (2019–2026)
@@ -139,7 +141,7 @@ granule, and both appear in `metadata.csv`.
 ## 4. Dataset Structure
 
 ```
-dataset/
+RawDataset/
 ├── images/                 true-colour PNGs (visualisation)
 │   ├── 2019/ 2020/ 2021/ 2022/ 2023/ 2024/ 2025/ 2026/
 │   │     L1_Abqaiq_N_<year>.png … L25_SandSWfar_km18_8_<year>.png   (25 per year)
@@ -268,7 +270,7 @@ attributed as follows):
 
 **Suggested citation for this dataset:**
 
-> ARTI 403 Project Team (2026). *Abqaiq–Salasil Sentinel-2 Time Series Dataset (2019–2026)* [Data set].
+> ARTI 403 Project Team (2026). *RawDataset: Abqaiq–Salasil Sentinel-2 Time Series Dataset (2019–2026)* [Data set].
 > https://github.com/BatoolAshour/Sand-Dune-Segmentation. Derived from Copernicus Sentinel-2 Level-2A imagery,
 > Copernicus Data Space Ecosystem (https://dataspace.copernicus.eu/), accessed 13 October and 9 November 2026.
 
