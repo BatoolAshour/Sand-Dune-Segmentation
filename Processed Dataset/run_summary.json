@@ -1,0 +1,25 @@
+{
+  "metadata_records": 200,
+  "selected_records": 200,
+  "expected_records": 200,
+  "processed": 200,
+  "reused": 0,
+  "failed": 0,
+  "inventory_errors": 0,
+  "warnings": 0,
+  "comparison_figures": 5,
+  "valid_pixels": 31999992,
+  "invalid_pixels": 8,
+  "filtering_scientific_exports": "disabled",
+  "preview_smoothing": "disabled",
+  "invalid_scl_classes": [
+    0,
+    1,
+    3,
+    8,
+    9,
+    10,
+    11
+  ],
+  "partial_run": false
+}

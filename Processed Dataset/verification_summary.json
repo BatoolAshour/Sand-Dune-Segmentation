@@ -1,0 +1,28 @@
+{
+  "verified_reflectance_geotiffs": 200,
+  "verified_validity_masks": 200,
+  "verified_scl_geotiffs": 200,
+  "temporally_aligned_locations": 25,
+  "original_files_verified_against_before_manifest": 405,
+  "valid_pixels": 31999992,
+  "invalid_pixels": 8,
+  "flagged_observations": [
+    {
+      "location_id": "L1",
+      "year": 2025,
+      "invalid_pixels": 4,
+      "invalid_scl_values": [
+        9
+      ]
+    },
+    {
+      "location_id": "L10",
+      "year": 2025,
+      "invalid_pixels": 4,
+      "invalid_scl_values": [
+        9
+      ]
+    }
+  ],
+  "result": "passed"
+}
