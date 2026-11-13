@@ -1,4 +1,4 @@
-"""Dune segmentation with texture analysis and morphological refinement.
+"""Texture analysis and morphological refinement of sand/dune masks.
 
 Steps for every image in the processed dataset:
     1. Load reflectance and the valid-pixel mask.
@@ -30,7 +30,7 @@ from scipy.cluster.vq import kmeans2, vq
 class Config:
     # Folders
     input_dir: Path = Path("Processed Dataset")
-    output_dir: Path = Path("Segmentation Results")
+    output_dir: Path = Path("Texture Morphology Results")
     locations: tuple = ()            # e.g. ("L1", "L10"); empty = all sites
 
     # Band order in the processed GeoTIFFs
@@ -254,7 +254,7 @@ def run(cfg=Config()):
     dune_clusters, cluster_table = pick_dune_clusters(cfg, model, feature_names)
     print(cluster_table.to_string(index=False))
 
-    # Pass 2: segment and refine every image.
+    # Pass 2: build and refine the sand mask for every image.
     results = []
     for row in records.itertuples():
         bands, valid, profile = load_image(cfg, row)
@@ -266,7 +266,7 @@ def run(cfg=Config()):
         refined = refine(cfg, raw, valid)
 
         name = f"{row.location}_{row.year}"
-        save_mask(cfg.output_dir / "masks" / str(row.year) / f"{name}_dune.tif", refined, valid, profile)
+        save_mask(cfg.output_dir / "masks" / str(row.year) / f"{name}_refined.tif", refined, valid, profile)
         save_preview(cfg, cfg.output_dir / "previews" / f"{name}.png", bands, features, clusters, raw, refined)
 
         pixel_km2 = abs(profile["transform"].a * profile["transform"].e) / 1e6
