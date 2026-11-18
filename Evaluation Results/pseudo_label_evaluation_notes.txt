@@ -1,0 +1,13 @@
+AUTOMATIC PSEUDO-LABEL EVALUATION NOTES
+========================================
+Reference / pseudo-label: BSI + Otsu binary segmentation mask.
+Compared prediction: Texture + Morphology refined binary segmentation mask.
+Positive class: sand (pixel value 1). Non-sand: 0. Invalid/ignored: 255.
+Both masks must have identical dimensions, transform, and CRS.
+IoU, Dice, Precision, and Recall describe agreement with the BSI + Otsu pseudo-labels only.
+They must NOT be described as true segmentation accuracy or independent validation.
+Precision = refined sand pixels overlapping BSI+Otsu sand / all refined sand pixels.
+Recall = refined sand pixels overlapping BSI+Otsu sand / all BSI+Otsu sand pixels.
+The evaluation does not use manually annotated Ground Truth masks because none are available.
+Difference mask classes: 0=both non-sand; 1=both sand; 2=BSI+Otsu sand removed by refinement; 3=sand added by refinement; 255=invalid.
+Macro summary = mean of per-image scores. Micro summary = metrics calculated from pooled pixel counts.

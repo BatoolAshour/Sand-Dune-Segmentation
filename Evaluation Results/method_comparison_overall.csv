@@ -1,0 +1,2 @@
+images,locations,years,initial_mean_pct,refined_mean_pct,mean_change_pp,images_reduced,images_increased,images_unchanged_within_0_001pp,mean_patches_before,mean_patches_after,total_patch_reduction_pct
+200,25,8,70.66209692797007,68.3574,-2.304696927970075,130,70,0,1007.64,11.37,98.87162081695844

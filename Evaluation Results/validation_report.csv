@@ -1,0 +1,40 @@
+check,status,details
+No duplicate BSI location-year rows,PASS,Duplicates: 0
+No duplicate refined location-year rows,PASS,Duplicates: 0
+All BSI and refined images matched,PASS,Matched: 200; left only: 0; right only: 0
+Location names agree between methods,PASS,Different location names: 0
+Initial segmentation values agree across summaries,PASS,Maximum absolute difference in fraction: 0.00005000
+Expected method-comparison image count,PASS,Matched images: 200
+Expected number of locations,PASS,Locations: 25
+Expected year coverage,PASS,"Years: [2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]"
+Annual area table has unique location-year records,PASS,Duplicates: 0
+Annual area table has 200 observations,PASS,Rows: 200
+Annual area table has 25 locations,PASS,Locations: 25
+Annual area table covers 2019-2026,PASS,"Years: [2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]"
+Annual sand coverage agrees with pixel counts,PASS,Maximum difference in percentage points: 0.0000000000
+Annual sand area agrees with pixel counts,PASS,Maximum area difference: 0.0000000000 km2
+Temporal statistics has 200 comparisons,PASS,Rows: 200
+Temporal comparisons include 175 consecutive and 25 full-period records,PASS,"Comparison counts: {'consecutive': 175, 'full_period': 25}"
+temporal_change_statistics.csv: Net change = after - before,PASS,Maximum absolute difference: 0.0000000000
+temporal_change_statistics.csv: Net change = gain - loss,PASS,Maximum absolute difference: 0.0000000000
+temporal_change_statistics.csv: Total changed area = gain + loss,PASS,Maximum absolute difference: 0.0000000000
+temporal_change_statistics.csv: Before sand = persistent sand + loss,PASS,Maximum absolute difference: 0.0000000000
+temporal_change_statistics.csv: After sand = persistent sand + gain,PASS,Maximum absolute difference: 0.0000000000
+temporal_change_statistics.csv: Changed area percentage formula,PASS,Maximum absolute difference: 0.0000000000
+temporal_change_statistics.csv: Relative sand change percentage formula,PASS,Maximum absolute difference: 0.0000000000
+change_2019_2026.csv: Net change = after - before,PASS,Maximum absolute difference: 0.0000000000
+change_2019_2026.csv: Net change = gain - loss,PASS,Maximum absolute difference: 0.0000000000
+change_2019_2026.csv: Total changed area = gain + loss,PASS,Maximum absolute difference: 0.0000000000
+change_2019_2026.csv: Before sand = persistent sand + loss,PASS,Maximum absolute difference: 0.0000000000
+change_2019_2026.csv: After sand = persistent sand + gain,PASS,Maximum absolute difference: 0.0000000000
+change_2019_2026.csv: Changed area percentage formula,PASS,Maximum absolute difference: 0.0000000000
+change_2019_2026.csv: Relative sand change percentage formula,PASS,Maximum absolute difference: 0.0000000000
+Long-term table has 25 site records,PASS,Rows: 25
+Temporal statistics has 25 full-period records,PASS,Rows: 25
+Long-term table matches full-period rows in temporal statistics,PASS,All locations matched: True; maximum numeric difference: 0.0000000000
+2019 long-term areas match annual sand-area table,PASS,Maximum difference: 0.0000000000 km2
+2026 long-term areas match annual sand-area table,PASS,Maximum difference: 0.0000000000 km2
+Annual sand coverage agrees with refined segmentation summary,PASS,Maximum difference: 0.005000 percentage points (tolerance 0.02)
+Automatic pseudo-label agreement metrics,PASS,"Compared: 200/200 images; missing pairs: 0; invalid/grid-mismatched pairs: 0. Metrics measure agreement with BSI+Otsu pseudo-labels, not independent accuracy."
+Provenance mask values are documented as 0/1/255,PASS,"{'0': 'non-sand', '1': 'sand', '255': 'invalid'}"
+Provenance observation/comparison counts are 200,PASS,observations=200; comparisons=200

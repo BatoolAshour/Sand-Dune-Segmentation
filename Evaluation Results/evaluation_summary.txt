@@ -1,0 +1,50 @@
+MEMBER 5 EVALUATION SUMMARY
+===========================
+Method-comparison images: 200
+Locations: 25
+Years: 8
+Initial mean predicted sand coverage: 70.662%
+Refined mean predicted sand coverage: 68.357%
+Mean coverage difference: -2.305 percentage points
+Images with reduced coverage: 130
+Images with increased coverage: 70
+Mean patches before: 1007.64
+Mean patches after: 11.37
+Total patch-count reduction: 98.872%
+
+TEMPORAL RESULTS (2019-2026; sums across 25 site records)
+Total sand gain: 14.8780 km2
+Total sand loss: 51.9446 km2
+Total net classified-sand change: -37.0666 km2
+Sites with net decrease: 20
+Sites with net increase: 5
+Consecutive temporal comparisons: 175
+
+PSEUDO-LABEL AGREEMENT EVALUATION
+BSI + Otsu masks are used as automatic pseudo-labels (weak reference masks).
+Texture + Morphology masks are treated as predictions and compared with those pseudo-labels.
+IoU, Dice, Precision and Recall measure agreement with the BSI + Otsu baseline only.
+They are NOT independent segmentation-accuracy scores because manually annotated Ground Truth is unavailable.
+Pseudo-label image pairs evaluated: 200
+Overall macro mean per image:
+  IoU: 0.8548
+  Dice: 0.9201
+  Precision: 0.9392
+  Recall: 0.9061
+  agreement_pct: 89.5334
+Overall micro score across pooled pixels:
+  IoU: 0.8600
+  Dice: 0.9247
+  Precision: 0.9403
+  Recall: 0.9096
+  agreement_pct: 89.5334
+Pseudo-label difference figure created: True
+Difference-mask values: 0=both non-sand, 1=both sand, 2=initial sand removed, 3=sand added by refinement, 255=invalid.
+
+TEMPORAL INTERPRETATION NOTE
+Temporal measurements describe changes in areas classified as sand by the image-processing workflow.
+They do not independently validate physical dune movement.
+
+Mask comparison figure created: True
+Existing preview panels copied: 3
+Validation checks: 39 PASS; 0 CHECK; 0 NOT AVAILABLE
